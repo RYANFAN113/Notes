@@ -1,4 +1,6 @@
-[原文链接](https://www.jianshu.com/p/191d1e21f7ed)
+# References
+[Markdown基本语法](https://www.jianshu.com/p/191d1e21f7ed)
+
 # 标题
 在想要设置为标题的文字前面加#来表示
 一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。  
@@ -61,6 +63,7 @@ n个...
 图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
 
 示例：
+!\[blockchain](`https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp~` "区块链")
 
 ![blockchain](https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp "区块链")  
 
@@ -82,3 +85,27 @@ title可加可不加
 
 示例:  
 <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
+
+# 代码块
+语法：
+
+使用一对反引号即可包含一个行内代码使用一对三个反引号可以包括多行代码，另外多行Tab也可以用于代码段
+
+'code'
+
+'''  
+code blocks  
+'''
+
+效果：
+
+'print("hello");'  
+
+'''  
+#include　&lt;iostream&gt;  
+int main()  
+{  
+std::cout<<"hello world!""<<std::endl;  
+return 0;  
+}  
+'''  

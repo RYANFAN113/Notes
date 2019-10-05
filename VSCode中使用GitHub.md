@@ -1,4 +1,6 @@
-[原文链接](https://blog.csdn.net/piglite/article/details/88222695)
+# References
+[VSCode中使用GitHub](https://blog.csdn.net/piglite/article/details/88222695)
+
 # 下载Git并安装，并添加路径到环境变量
 git --version
 ##### 如果显示版本号，则安装成功

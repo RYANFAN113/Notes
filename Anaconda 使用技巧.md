@@ -1,5 +1,7 @@
+# References
+[Anaconda 常用命令](https://www.jianshu.com/p/6d7de7a00b8d)
+
 # Anaconda 常用命令
-[原文转载](https://www.jianshu.com/p/6d7de7a00b8d)
 ## 查看已安装的包
 conda list
 ## 更新所有包
@@ -37,14 +39,14 @@ sudo conda config --show-sources
 sudo vim /home/username/.condarc
 ### 改为下面
 channels:  
-  - defaults  
+&nbsp;&nbsp;\- defaults  
 
 show_channel_urls: true  
 
 default_channels:  
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r  
+&nbsp;&nbsp;\- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  
+&nbsp;&nbsp;\- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  
+&nbsp;&nbsp;\- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r  
 
 custom_channels:  
   conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  

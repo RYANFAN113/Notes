@@ -1,0 +1,8 @@
+# Ubuntu装机配置
+
+[Linux系统中swap分区的设置与增加/删除](https://www.jb51.net/article/142928.htm)
+
+[使用 AppImageLauncher 轻松运行和集成 AppImage 文件](https://cloud.tencent.com/developer/news/215568)
+
+# 用命令行设置chrome的proxy
+google-chrome-stable --proxy-server="socks5://127.0.0.1:1080"
