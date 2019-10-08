@@ -50,3 +50,7 @@ sudo add-apt-repository -r ppa:user/ppa-name
 #### 然后进入 /etc/apt/sources.list.d 目录，将相应 ppa 源的保存文件删除。
 #### 最后同样更新一下：  
 sudo apt-get update
+
+# N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository 'http://miktex.org/download/ubuntu bionic InRelease' doesn't support architecture 'i386'
+sudo vim /etc/apt/sources.list.d/miktex.list  
+在deb后面加入 [arch=amd64]
