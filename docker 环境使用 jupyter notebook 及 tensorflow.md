@@ -1,8 +1,14 @@
-# docker 环境使用 jupyter notebook 及　tensorflow
+# 目录
+
+- [目录](#%e7%9b%ae%e5%bd%95)
+- [References](#references)
+- [部署　docker 容器](#%e9%83%a8%e7%bd%b2-docker-%e5%ae%b9%e5%99%a8)
+- [docker 设置 jupyter notebook](#docker-%e8%ae%be%e7%bd%ae-jupyter-notebook)
+- [后台运行jupyter](#%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8cjupyter)
 
 ---
 
-## References
+# References
 
 [docker环境使用tensorflow以及jupyter notebook的使用](https://blog.csdn.net/qq_16949707/article/details/64497701)
 
@@ -10,7 +16,7 @@
 
 ---
 
-## 部署　docker 容器
+# 部署　docker 容器
 
 ```shell
 sudo docker run -p 7777:8888 -it -v /home/host:/home/server image
@@ -18,7 +24,7 @@ sudo docker run -p 7777:8888 -it -v /home/host:/home/server image
 
 ---
 
-## docker 设置 jupyter notebook
+# docker 设置 jupyter notebook
 
 设置密码 保存sha1密匙（带‘’）  
 
@@ -54,7 +60,7 @@ python -m ipykernel install --name tensorflow --display-name "tensorflow(python3
 
 ---
 
-## 后台运行jupyter  
+# 后台运行jupyter  
 
 ```shell
 nohup jupyter notebook > /data/jupyter/jupyter.log 2>&1 --ip=0.0.0.0 &
