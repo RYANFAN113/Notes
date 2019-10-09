@@ -1,8 +1,12 @@
 # Anaconda 使用方法
 
+---
+
 ## References
 
 [Anaconda 常用命令](https://www.jianshu.com/p/6d7de7a00b8d)
+
+---
 
 ## Anaconda 常用命令
 
@@ -41,6 +45,8 @@ conda update package_name
 ```shell
 conda search name  
 ```
+
+---
 
 ## 虚拟环境
 
@@ -95,6 +101,8 @@ conda env export > environment.yaml
 ```shell
 conda env create -f environment.yaml
 ```
+
+---
 
 ## anaconda换源
 

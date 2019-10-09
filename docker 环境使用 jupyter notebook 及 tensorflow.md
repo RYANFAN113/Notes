@@ -1,16 +1,22 @@
 # docker 环境使用 jupyter notebook 及　tensorflow
 
+---
+
 ## References
 
 [docker环境使用tensorflow以及jupyter notebook的使用](https://blog.csdn.net/qq_16949707/article/details/64497701)
 
 [玩转Jupyter Notebook](https://cloud.tencent.com/developer/article/1147487)
 
+---
+
 ## 部署　docker 容器
 
 ```shell
 sudo docker run -p 7777:8888 -it -v /home/host:/home/server image
 ```
+
+---
 
 ## docker 设置 jupyter notebook
 
@@ -45,6 +51,8 @@ c.NotebookApp.port =8888
 ```shell
 python -m ipykernel install --name tensorflow --display-name "tensorflow(python3.6)"
 ```
+
+---
 
 ## 后台运行jupyter  
 

@@ -1,7 +1,11 @@
 # pip 使用方法
 
+---
+
 *<font size=2>pip 是 Python 包管理工具，该工具提供了对Python 包的查找、下载、安装、卸载的功能。目前如果你在 python.org 下载最新版本的安装包，则是已经自带了该工具。Python 2.7.9 + 或 Python 3.2+ 以上版本都自带 pip 工具。*  
 [pip 官网](https://pypi.org/project/pip/)</font>
+
+---
 
 ## 安装pip
 
@@ -10,6 +14,8 @@
 ```shell
 pip --version  
 ```
+
+---
 
 ### 如果你还未安装，则可以使用以下方法来安装：
 
@@ -34,6 +40,8 @@ Linux 发行版可直接用包管理器安装 pip，如 Debian 和 Ubuntu：
 ```shell
 sudo apt-get install python-pip
 ```
+
+---
 
 ## pip 最常用命令
 
@@ -123,6 +131,8 @@ python2 -m pip install XXX
 # Python3:  
 python3 -m pip install XXX
 ```
+
+---
 
 ## 设置pypi清华镜像
 

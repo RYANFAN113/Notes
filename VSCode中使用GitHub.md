@@ -1,8 +1,12 @@
 # VSCode中使用GitHub
 
+---
+
 ## References
 
 [VSCode中使用GitHub](https://blog.csdn.net/piglite/article/details/88222695)
+
+---
 
 ## GIT 配置方法
 
@@ -58,6 +62,8 @@ ssh -T git@github.com
 git pull mycode master  
 git push --force mycode master
 ```
+
+---
 
 ## VSCode 配置方法
 

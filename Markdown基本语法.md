@@ -1,8 +1,18 @@
 # Markdown 基本语法
 
+---
+
 ## References
 
+---
+
 [Markdown基本语法](https://www.jianshu.com/p/191d1e21f7ed)
+
+[在 VSCode 下用 Markdown Preview Enhanced 愉快地写文档](http://get.ftqq.com/9126.get)
+
+[Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)
+
+---
 
 ## 标题
 
@@ -13,31 +23,52 @@
 
 示例：
 
-\# 这是一级标题
+```markdown
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+##### 这是五级标题
+###### 这是六级标题
+```
+
+效果：
 
 # 这是一级标题
 
-\## 这是二级标题
-
 ## 这是二级标题
-
-\### 这是三级标题
 
 ### 这是三级标题
 
-\#### 这是四级标题
-
 #### 这是四级标题
-
-\##### 这是五级标题
 
 ##### 这是五级标题
 
-\###### 这是六级标题
-
 ###### 这是六级标题
 
+---
+
 ## 字体
+
+示例：
+
+```markdown
+**这是加粗的文字**  
+*这是倾斜的文字*  
+***这是斜体加粗的文字***  
+~~这是加删除线的文字~~
+==标记==
+
+<font face="黑体">我是黑体字\</font>  
+<font face="微软雅黑">我是微软雅黑\</font>  
+<font face="STCAIYUN">我是华文彩云\</font>  
+<font color=red>我是红色\</font>  
+<font color=#008000>我是绿色\</font>  
+<font color=Blue>我是蓝色\</font>  
+<font size=5>我是尺寸\</font>  
+<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5\</font>  
+```
+
+效果：
 
 **这是加粗的文字**  
 *这是倾斜的文字*  
@@ -54,6 +85,8 @@
 <font size=5>我是尺寸</font>  
 <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>  
 
+---
+
 ## 引用
 
 在引用的文字前加>即可。引用也可以嵌套，如加两个>>三个>>>
@@ -62,15 +95,66 @@ n个...
 
 示例：
 
+```markdown
 >这是引用的内容
 >>这是引用的内容
 >>>>>>>>>>这是引用的内容
+```
+
+效果：
+
+>这是引用的内容1
+>>这是引用的内容2
+>>>>>>>>>>这是引用的内容3
+
+---
 
 ## 缩写
 
+示例：
+
+```markdown
 *[HTML]: Hyper Text Markup Language
 *[W3C]:  World Wide Web Consortium
 The HTML specification is maintained by the W3C.
+```
+
+效果：
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+The HTML specification is maintained by the W3C.
+
+---
+
+## 注脚
+
+示例：
+
+```markdown
+Content [^1]
+[^1]: Hi! This is a footnot
+```
+
+效果：
+Content [^1]
+[^1]: Hi! This is a footnot
+
+---
+
+## 上下标
+
+示例：
+
+```markdown
+30\^th^
+H\~2~O
+```
+
+效果：
+30^th^
+H~2~O
+
+---
 
 ## 分割线
 
@@ -78,57 +162,98 @@ The HTML specification is maintained by the W3C.
 
 示例：
 
-\---
+```markdown
+---
+```
+
+效果：
 
 ---
 
-\----
+```markdown
+----
+```
+
+效果：
 
 ----
 
-\***
+```markdown
+***
+```
+
+效果：
 
 ***
 
-\*****
+```markdown
+*****
+```
+
+效果：
 
 *****
+
+---
 
 ## 图片
 
 语法：
 
+```markdown
 ![图片alt](图片地址 ''图片title'')
 
-图片alt就是显示在图片下面的文字，相当于对图片内容的解释。  
-图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+# 图片alt就是显示在图片下面的文字，相当于对图片内容的解释。  
+# 图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+```
 
 示例：
-!\[blockchain](<https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp> "区块链")
 
+```markdown
+![blockchain](<https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp> "区块链")
+```
+
+效果：
 ![blockchain](https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp "区块链")  
 
 上传本地图片直接点击导航栏的图片标志，选择图片即可
+
+---
 
 ## 超链接
 
 语法：
 
-\[超链接名](超链接地址 "超链接title")  
-title可加可不加
+```markdown
+[超链接名](超链接地址 "超链接title")  
+# title可加可不加
+```
 
 示例：
 
-\[百度](http://baidu.com "baidu")  
+```markdown
+[百度](http://baidu.com "baidu")  
+```
+
+效果：
 [百度](http://baidu.com "baidu")
 
 注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。
 
-\<a href="超链接地址" target="_blank">超链接名</a>
+```markdown
+<a href="超链接地址" target="_blank">超链接名</a>
+```
 
 示例:  
-\<a href="<https://www.jianshu.com/u/1f5ac0cf6a8b>" target="_blank">简书\</a>  
+
+```markdown
+<a href="<https://www.jianshu.com/u/1f5ac0cf6a8b>" target="_blank">简书\</a>  
+```
+
+效果：
 <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
+
+---
 
 ## 代码块
 
@@ -136,17 +261,32 @@ title可加可不加
 
 使用一对反引号即可包含一个行内代码使用一对三个反引号可以包括多行代码，另外多行Tab也可以用于代码段
 
-`code`
+示例：
 
-```language{.line-numbers highlight=1}
-code blocks  
+```c++
+`print("hello");`
+```
+
+效果：
+`print("hello");`
+
+示例：
+
+```markdown  
+#```C++ {.line-numbers highlight=3-4}  
+include<iostream>
+int main()
+{  
+std::cout<<"hello world!""<<std::endl;  
+return 0;  
+}  
+#```
+# 把井号删除
 ```
 
 效果：
 
-`print("hello");`
-
-```C++ {.line-numbers highlight=4-5}  
+```C++ {.line-numbers highlight=3-4}
 include<iostream>
 int main()  
 {  
@@ -155,8 +295,83 @@ return 0;
 }  
 ```  
 
-```javascript {.class1 .class}
-function add(x, y) {
-  return x + y
-}
+---
+
+## 任务列表
+
+示例：
+
+```markdown
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags<del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 ```
+
+效果：
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+---
+
+## 表格
+
+示例：
+
+```markdown
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+```
+
+效果：
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+---
+
+## 列表
+
+### 无序列表
+
+示例：
+
+```markdown
+- Item 1
+- Item 2
+  - Item 2a
+  - Item 2b
+```
+
+效果：
+
+- Item 1
+- Item 2
+  - Item 2a
+  - Item 2b
+
+### 有序列表
+
+示例：
+
+```markdown
+1. Item 1
+2. Item 2
+3. Item 3
+   1. Item 3a
+   2. Item 3b
+```
+
+效果：
+
+1. Item 1
+2. Item 2
+3. Item 3
+   1. Item 3a
+   2. Item 3b

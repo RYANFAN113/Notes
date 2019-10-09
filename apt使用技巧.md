@@ -1,10 +1,14 @@
 # apt 使用方法
 
+---
+
 ## References
 
 [原文转载](https://blog.csdn.net/u011596455/article/details/60322568)
 
 [在Ubuntu中添加和删除PPA的软件源](https://blog.csdn.net/lu_embedded/article/details/55803500)
+
+---
 
 ## apt强制停止后Could not get lock /var/lib/dpkg/lock解决方案
 
@@ -13,6 +17,8 @@ sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock  
 sudo rm /var/cache/apt/archives/lock  
 ```
+
+---
 
 ## 修改apt源
 
@@ -54,6 +60,8 @@ deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe 
 # deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
 ```
 
+---
+
 ## 在Ubuntu中添加和删除PPA的软件源
 
 ### 添加 PPA 源
@@ -84,6 +92,8 @@ sudo add-apt-repository -r ppa:user/ppa-name
 ```shell
 sudo apt-get update
 ```
+
+---
 
 ## N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>` bionic InRelease' doesn't support architecture 'i386'
 

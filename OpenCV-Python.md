@@ -1,10 +1,14 @@
 # OpenCV-Python
 
+---
+
 ## 安装
 
 ```shell
 pip3 install opencv-python
 ```
+
+---
 
 ## 缺少共享文件库
 

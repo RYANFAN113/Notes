@@ -1,5 +1,7 @@
 # wine 安装与使用
 
+---
+
 ## 安装winehq
 
 If your system is 64 bit, enable 32 bit architecture (if you haven't already:
@@ -33,11 +35,15 @@ Then install one of the following packages:
 sudo apt install --install-recommends winehq-stable
 ```
 
+---
+
 ## 安装winetricks
 
 ```shell
 sudo apt install winetricks
 ```
+
+---
 
 ## 解决微信输入问题
 
