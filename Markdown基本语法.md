@@ -108,15 +108,15 @@ n个...
 示例：
 
 ```markdown
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
+*[HTML]: Hyper Text Markup Language  
+*[W3C]:  World Wide Web Consortium  
 The HTML specification is maintained by the W3C.
 ```
 
 效果：
 
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
+*[HTML]: Hyper Text Markup Language  
+*[W3C]:  World Wide Web Consortium  
 The HTML specification is maintained by the W3C.
 
 ---
