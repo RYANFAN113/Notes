@@ -114,6 +114,7 @@ The HTML specification is maintained by the W3C.
 ```
 
 效果：
+
 *[HTML]: Hyper Text Markup Language
 *[W3C]:  World Wide Web Consortium
 The HTML specification is maintained by the W3C.
@@ -130,6 +131,7 @@ Content [^1]
 ```
 
 效果：
+
 Content [^1]
 [^1]: Hi! This is a footnot
 
@@ -145,6 +147,7 @@ H\~2~O
 ```
 
 效果：
+
 30^th^
 H~2~O
 
@@ -208,6 +211,7 @@ H~2~O
 ```
 
 效果：
+
 ![blockchain](https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp "区块链")  
 
 上传本地图片直接点击导航栏的图片标志，选择图片即可
@@ -230,6 +234,7 @@ H~2~O
 ```
 
 效果：
+
 [百度](http://baidu.com "baidu")
 
 注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。
@@ -245,6 +250,7 @@ H~2~O
 ```
 
 效果：
+
 <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
 
 ---
@@ -261,7 +267,8 @@ H~2~O
 `print("hello");`
 ```
 
-效果：
+效果:
+
 `print("hello");`
 
 示例：
@@ -323,6 +330,7 @@ Content in the first column | Content in the second column
 ```
 
 效果：
+
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
