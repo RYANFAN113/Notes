@@ -142,8 +142,8 @@ Content [^1]
 示例：
 
 ```markdown
-30\^th^
-H\~2~O
+30^th^  
+H~2~O
 ```
 
 效果：
