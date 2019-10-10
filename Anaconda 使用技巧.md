@@ -127,7 +127,7 @@ conda env create -f environment.yaml
 查看.condarc
 
 ```shell
-sudo conda config --show-sources
+conda config --show-sources
 ```
 
 修改.condarc 位置从上面一步看 若找不到.condarc也可以先执行最后一步
