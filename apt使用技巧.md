@@ -2,14 +2,16 @@
 
 - [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
-- [apt强制停止后Could not get lock /var/lib/dpkg/lock解决方案](#apt%e5%bc%ba%e5%88%b6%e5%81%9c%e6%ad%a2%e5%90%8ecould-not-get-lock-varlibdpkglock%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88)
 - [修改apt源](#%e4%bf%ae%e6%94%b9apt%e6%ba%90)
   - [原文件备份](#%e5%8e%9f%e6%96%87%e4%bb%b6%e5%a4%87%e4%bb%bd)
   - [编辑源列表文件](#%e7%bc%96%e8%be%91%e6%ba%90%e5%88%97%e8%a1%a8%e6%96%87%e4%bb%b6)
 - [在Ubuntu中添加和删除PPA的软件源](#%e5%9c%a8ubuntu%e4%b8%ad%e6%b7%bb%e5%8a%a0%e5%92%8c%e5%88%a0%e9%99%a4ppa%e7%9a%84%e8%bd%af%e4%bb%b6%e6%ba%90)
   - [添加 PPA 源](#%e6%b7%bb%e5%8a%a0-ppa-%e6%ba%90)
   - [删除 PPA 源](#%e5%88%a0%e9%99%a4-ppa-%e6%ba%90)
-- [N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>` bionic InRelease' doesn't support architecture 'i386'](#n-skipping-acquire-of-configured-file-universebinary-i386packages-as-repository-httpmiktexorgdownloadubuntu-bionic-inrelease-doesnt-support-architecture-i386)
+- [Error](#error)
+  - [N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>' bionic InRelease' doesn't support architecture 'i386'](#n-skipping-acquire-of-configured-file-universebinary-i386packages-as-repository-httpmiktexorgdownloadubuntu-bionic-inrelease-doesnt-support-architecture-i386)
+  - [error: Could not get lock /var/lib/dpkg/lock](#error-could-not-get-lock-varlibdpkglock)
+  - [error: dpkg frontend is locked by another process](#error-dpkg-frontend-is-locked-by-another-process)
   
 ---
 
@@ -18,16 +20,6 @@
 [原文转载](https://blog.csdn.net/u011596455/article/details/60322568)
 
 [在Ubuntu中添加和删除PPA的软件源](https://blog.csdn.net/lu_embedded/article/details/55803500)
-
----
-
-# apt强制停止后Could not get lock /var/lib/dpkg/lock解决方案
-
-```shell
-sudo rm /var/lib/dpkg/lock  
-sudo rm /var/lib/apt/lists/lock  
-sudo rm /var/cache/apt/archives/lock  
-```
 
 ---
 
@@ -106,10 +98,28 @@ sudo apt-get update
 
 ---
 
-# N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>` bionic InRelease' doesn't support architecture 'i386'
+# Error
+
+## N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>' bionic InRelease' doesn't support architecture 'i386'
 
 ```shell
 sudo vim /etc/apt/sources.list.d/miktex.list
 
 # 在deb后面加入 [arch=amd64]
+```
+
+## error: Could not get lock /var/lib/dpkg/lock
+
+```shell
+sudo rm /var/lib/dpkg/lock  
+sudo rm /var/lib/apt/lists/lock  
+sudo rm /var/cache/apt/archives/lock  
+```
+
+## error: dpkg frontend is locked by another process
+
+```shell
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/cache/apt/archives/lock
 ```
