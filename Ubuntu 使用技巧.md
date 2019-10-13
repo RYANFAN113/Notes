@@ -50,6 +50,8 @@ alias newname_of_command='oldname_of_command'
 vim ~/.bashrc
 
 # 将 alias newname_of_command='oldname_of_command 命令添加进去
+
+source ~/.bashrc    #使设置生效
 ```
 
 注意：
