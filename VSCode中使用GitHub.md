@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [GIT 配置方法](#git-%e9%85%8d%e7%bd%ae%e6%96%b9%e6%b3%95)
   - [下载Git并安装，并添加路径到环境变量](#%e4%b8%8b%e8%bd%bdgit%e5%b9%b6%e5%ae%89%e8%a3%85%e5%b9%b6%e6%b7%bb%e5%8a%a0%e8%b7%af%e5%be%84%e5%88%b0%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f)

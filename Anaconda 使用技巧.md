@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [Anaconda 常用命令](#anaconda-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4)
   - [查看已安装的包](#%e6%9f%a5%e7%9c%8b%e5%b7%b2%e5%ae%89%e8%a3%85%e7%9a%84%e5%8c%85)

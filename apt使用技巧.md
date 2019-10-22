@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [修改apt源](#%e4%bf%ae%e6%94%b9apt%e6%ba%90)
   - [原文件备份](#%e5%8e%9f%e6%96%87%e4%bb%b6%e5%a4%87%e4%bb%bd)

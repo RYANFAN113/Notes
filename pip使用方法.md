@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [安装pip](#%e5%ae%89%e8%a3%85pip)
 - [pip 最常用命令](#pip-%e6%9c%80%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4)
 - [设置pypi清华镜像](#%e8%ae%be%e7%bd%aepypi%e6%b8%85%e5%8d%8e%e9%95%9c%e5%83%8f)

@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [安装winehq](#%e5%ae%89%e8%a3%85winehq)
 - [安装winetricks](#%e5%ae%89%e8%a3%85winetricks)
 - [解决微信输入问题](#%e8%a7%a3%e5%86%b3%e5%be%ae%e4%bf%a1%e8%be%93%e5%85%a5%e9%97%ae%e9%a2%98)

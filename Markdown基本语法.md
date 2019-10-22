@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [Markdown 基本语法](#markdown-%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95)
   - [字体](#%e5%ad%97%e4%bd%93)

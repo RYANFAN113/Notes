@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [基础知识](#%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86)
   - [LATEX控制序列的概念（类似于函数）](#latex%e6%8e%a7%e5%88%b6%e5%ba%8f%e5%88%97%e7%9a%84%e6%a6%82%e5%bf%b5%e7%b1%bb%e4%bc%bc%e4%ba%8e%e5%87%bd%e6%95%b0)

@@ -1,8 +1,9 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
-- [部署　docker 容器](#%e9%83%a8%e7%bd%b2-docker-%e5%ae%b9%e5%99%a8)
+- [docker 常用命令](#docker-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4)
+  - [部署　docker 容器](#%e9%83%a8%e7%bd%b2-docker-%e5%ae%b9%e5%99%a8)
+  - [重命名容器名](#%e9%87%8d%e5%91%bd%e5%90%8d%e5%ae%b9%e5%99%a8%e5%90%8d)
+  - [删除镜像](#%e5%88%a0%e9%99%a4%e9%95%9c%e5%83%8f)
+  - [删除容器](#%e5%88%a0%e9%99%a4%e5%ae%b9%e5%99%a8)
 - [docker 设置 jupyter notebook](#docker-%e8%ae%be%e7%bd%ae-jupyter-notebook)
 - [后台运行jupyter](#%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8cjupyter)
 
@@ -16,10 +17,30 @@
 
 ---
 
-# 部署　docker 容器
+# docker 常用命令
+
+## 部署　docker 容器
 
 ```shell
 sudo docker run -p hostport:8888 -it -v /home/host:/home/server image
+```
+
+## 重命名容器名
+
+```shell
+docker rename 原容器名  新容器名
+```
+
+## 删除镜像
+
+```shell
+docker rmi <image id>
+```
+
+## 删除容器
+
+```shell
+docker rm <container id>
 ```
 
 ---

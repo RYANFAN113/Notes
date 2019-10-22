@@ -1,6 +1,3 @@
-# 目录
-
-- [目录](#%e7%9b%ae%e5%bd%95)
 - [References](#references)
 - [用命令行设置chrome的proxy](#%e7%94%a8%e5%91%bd%e4%bb%a4%e8%a1%8c%e8%ae%be%e7%bd%aechrome%e7%9a%84proxy)
 - [使用alias自定义快捷命令](#%e4%bd%bf%e7%94%a8alias%e8%87%aa%e5%ae%9a%e4%b9%89%e5%bf%ab%e6%8d%b7%e5%91%bd%e4%bb%a4)
