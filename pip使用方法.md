@@ -138,5 +138,5 @@ python3 -m pip install XXX
 
 ```shell
 pip install pip -U  
-pip config set global.index-url <https://pypi.tuna.tsinghua.edu.cn/simple>
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```

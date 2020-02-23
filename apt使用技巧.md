@@ -9,6 +9,7 @@
   - [N: Skipping acquire of configured file 'universe/binary-i386/Packages' as repository '<http://miktex.org/download/ubuntu>' bionic InRelease' doesn't support architecture 'i386'](#n-skipping-acquire-of-configured-file-universebinary-i386packages-as-repository-httpmiktexorgdownloadubuntu-bionic-inrelease-doesnt-support-architecture-i386)
   - [error: Could not get lock /var/lib/dpkg/lock](#error-could-not-get-lock-varlibdpkglock)
   - [error: dpkg frontend is locked by another process](#error-dpkg-frontend-is-locked-by-another-process)
+  - [error: <http://mirrors.aliyun.com/ubuntu> bionic-security InRelease The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 3B4FE6ACC0B21F32](#error-httpmirrorsaliyuncomubuntu-bionic-security-inrelease-the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available-nopubkey-3b4fe6acc0b21f32)
   
 ---
 
@@ -119,4 +120,10 @@ sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
+```
+
+## error: <http://mirrors.aliyun.com/ubuntu> bionic-security InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 3B4FE6ACC0B21F32
+
+```shell
+apt-key adv –keyserver keyserver.ubuntu.com –recv-keys 3B4FE6ACC0B21F32
 ```

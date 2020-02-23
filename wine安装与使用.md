@@ -25,6 +25,12 @@ Add the repository:Ubuntu 18.04
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 ```
 
+为所需的libfaudio0库添加PPA
+
+```shell
+sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+```
+
 Update packages:  
 
 ```shell

@@ -22,7 +22,7 @@
 ## 部署　docker 容器
 
 ```shell
-sudo docker run -p hostport:8888 -it -v /home/host:/home/server image
+sudo docker run -p hostport:8888 -it -v /host:/server image
 ```
 
 ## 重命名容器名
