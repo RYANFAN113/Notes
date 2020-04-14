@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}用\LaTeX 排版文字}{1}% 
+\contentsline {section}{\numberline {2}目录和页眉页脚}{3}% 
+\contentsline {subsection}{\numberline {2.1}子章节}{3}% 
+\contentsline {subsubsection}{\numberline {2.1.1}子子章节}{3}% 
+\contentsline {paragraph}{段落}{3}% 
+\contentsline {subparagraph}{子段落}{3}% 
+\contentsline {section}{标题不带编号}{3}% 
+\contentsline {part}{第一部分\hspace {1em}分块}{3}% 
+\contentsline {section}{\numberline {3}交叉引用}{3}% 
+\contentsline {section}{\numberline {4}脚注和边注}{4}% 
+\contentsline {section}{\numberline {5}特殊环境}{4}% 
+\contentsline {subsection}{\numberline {5.1}列表}{4}% 
+\contentsline {subsection}{\numberline {5.2}对齐环境}{5}% 
+\contentsline {subsection}{\numberline {5.3}引用环境}{5}% 
+\contentsline {subsection}{\numberline {5.4}代码环境}{5}% 
+\contentsline {subsection}{\numberline {5.5}表格}{6}% 
+\contentsline {subsubsection}{\numberline {5.5.1}列表格}{6}% 
+\contentsline {section}{\numberline {A}附录}{6}% 

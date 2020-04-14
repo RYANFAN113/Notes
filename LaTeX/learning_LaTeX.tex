@@ -1,0 +1,217 @@
+\documentclass[a4paper]{ctexart}
+\usepackage{array}
+\begin{document}
+\title{标题页}
+\author{Ryan\thanks{注脚}%
+    \and Fan\thanks{注脚}%
+    }
+\date{\today}
+\maketitle
+\abstract
+一般用于紧跟\textbackslash maketitle 命令之后介绍文档的摘要\par
+中文\LaTeX{}排版。
+\section{用\LaTeX 排版文字}
+{}分段\\换行\textbackslash\par
+冒号``please press the `x' key.''\par
+连字符-用来组成复合词，\\%
+短破折号--用来连接数字表示范围，\\%
+长破折号---用来连接单词\par
+省略号\dots{}和\ldots\par
+波浪号～\par
+强调\underline{文字,但是无法换行，}%
+\uline{ulem 宏包解决了这一问题,它提供的 uline 命令能够轻松生成自动换行的下划线。}%
+\emph{emph 命令用来将文字变为斜体以示强调。%
+    \emph{如果在本身已经用 emph 命令强调的文字内部嵌套使用 emph 命令,}%
+    内部则使用直立体文字。%
+    }\par
+在合适的位置插入一个不会断行的空格Fig.~1, Ryan~Fan\par
+断行\\[15pt]可以带可选参数 ⟨length⟩,用于在换行处向下增加垂直间距%
+\newline{}或者newline命令，不用带参数\par
+\newpage 断页，在在双栏排版中只起到另起一栏的作用\par
+断词　I think this is: supercalifragil\-isticexpialidocious. %
+And I think this is: supercalifragilisticexpialidocious.\par
+\newpage
+\tableofcontents
+\section[目录和页眉页脚]{章节}
+\subsection{子章节}
+\subsubsection{子子章节}
+\paragraph{段落}
+\subparagraph{子段落}
+\section*{标题不带编号}
+\addcontentsline{toc}{section}{标题不带编号}
+\part{分块}
+\section{交叉引用}
+A reference to this subsection\label{sec:this} looks like: %
+``see section~\ref{sec:this} on page~\pageref{sec:this}.''
+\section{脚注和边注}
+“天地玄黄,宇宙洪荒。日月盈昃,辰宿列张。”\footnote{出自《千字文》。}\par
+\begin{tabular}{l}
+\hline
+有些情况下(比如在表格环境、各种盒子\\
+内)使用 footnote 并不能正确生成脚\\
+注。我们以分两步进行,先使用 \\
+footnotemark 为脚注计数,再在合适\\
+的位置用 footnotetext 生成脚注。\footnotemark\\
+\hline
+\end{tabular}
+\footnotetext{出自《千字文》。}
+\marginpar{\footnotesize 边注较窄,不要写过多文字,最好设置较小的字号。}
+\section{特殊环境}
+\subsection{列表}
+有序列表
+\begin{enumerate}
+    \item An item.
+    \begin{enumerate}
+        \item A nested item.\label{itref}
+        \item[*] A starred item.
+    \end{enumerate}
+    \item Reference(\ref{itref}).
+\end{enumerate}
+无序列表
+\begin{itemize}
+    \item An item.
+    \begin{itemize}
+        \item A nested item.
+        \item[+] A `plus' item. + A ‘plus’ item.
+        \item Another item. – Another item.
+    \end{itemize}
+    \item Go back to upper level.
+\end{itemize}
+关键字环境
+\begin{description}
+    \item[Enumerate] Numbered list.
+    \item[Itemize] Non-numbered list.
+\end{description}
+重定义无序列表的符号
+\renewcommand{\labelitemi}{\dag}
+\renewcommand{\labelitemii}{\ddag}
+\begin{itemize}
+    \item First item
+    \begin{itemize} 
+        \item Subitem
+        \item Subitem
+    \end{itemize}
+    \item Second item
+\end{itemize}
+重定义有序列表的符号
+\renewcommand{\labelenumi}{\Alph{enumi}>}
+\begin{enumerate}
+    \item First item
+    \item Second item
+\end{enumerate}
+\subsection{对齐环境}
+center、flushleft 和 flushright 环境分别用于生成%
+居中、左对齐和右对齐的文本环境。
+\begin{center}
+    Centered text using a
+    \verb|center| environment.
+\end{center}
+\begin{flushleft}
+    Left-aligned text using a
+    \verb|flushleft| environment.
+\end{flushleft}
+\begin{flushright}
+    Right-aligned text using a
+    \verb|flushright| environment.
+\end{flushright}
+还可以用以下命令直接改变文字的对齐方式:
+\centering
+Centered text paragraph.\par
+\raggedright
+Left-aligned text paragraph.\par
+\raggedleft
+Right-aligned text paragraph.\par
+\begin{flushleft}
+    center 等环境会在上下文产生一个额外间距,%
+    而 \textbackslash centering 等命令不产生,只是改变对齐方式。%
+\end{flushleft}
+\raggedright
+比如在浮动体环境 table 或 figure 内实现居中对齐,%
+用 \textbackslash centering 命令即可,没必要再用 center 环境。
+\subsection{引用环境}
+\begin{description}
+    \item[quote] 用于引用较短的文字,首行不缩进\\
+    Francis Bacon says:
+    \begin{quote}
+        Knowledge is power.
+    \end{quote}
+    \item[quotation] 用于引用若干段文字,首行缩进\\
+    《木兰诗》:
+    \begin{quotation}
+        万里赴戎机,关山度若飞。
+        朔气传金柝,寒光照铁衣。
+        将军百战死,壮士十年归。
+
+        归来见天子,天子坐明堂。
+        策勋十二转,赏赐百千强。......
+    \end{quotation} 
+\end{description}
+\subsection{代码环境}
+\begin{verbatim}
+    #include <iostream>
+    int main() 
+    {
+      std::cout << "Hello, world!"
+                << std::endl;
+      return 0;
+    }
+\end{verbatim}
+\begin{verbatim*}
+    for (int i=0; i<4; ++i)
+      printf("Number %d\n",i);
+\end{verbatim*}
+要排版简短的代码或关键字\textbackslash verb ⟨delim⟩⟨code⟩⟨delim⟩\par
+⟨delim⟩ 标明代码的分界位置,前后必须一致,除字母、空格或星号外,%
+可任意选择使得不与代码本身冲突,习惯上使用 | 符号。\par
+\verb|\LaTeX| \\ 
+\verb+(a || b)+ \verb*+(a || b)+    
+\subsection{表格}
+\subsubsection{列表格}
+tabular 环境使用 ⟨column-spec⟩ 参数指定表格的列数以及每列的格式。\par
+\begin{tabular}{lcr|p{6em}}
+    \hline
+    left & center & right & par box with fixed width\\
+    L    & C      & R     & P\\
+    \hline
+\end{tabular}\par
+@ 格式可在单元格前后插入任意的文本,%
+但同时它也消除了单元格前后额外添加的间距。\par
+\begin{tabular}{@{} r@{:}lr @{}}
+    \hline
+    1 & 1 &　one\\
+    11 & 3 & eleven\\
+    \hline
+\end{tabular}\par
+格式参数重复\par
+\begin{tabular}{|*{5}{c|}*{2}{p{3em}|}}
+    \hline
+    one & two & three & four & five & Hello! \LaTeX & Hello!\\
+    1   & 2   & 3     & 4    & 5    & hello!        & \LaTeX\\
+    \hline    
+\end{tabular}\par
+辅助格式 > 和 <,用于给列格式前后加上修饰命令\par
+\begin{tabular}{>{\itshape}r<{*}l}
+    %需要使用array宏包
+    \hline
+    italic & normal \\
+    column & column \\
+    \hline    
+\end{tabular}\par
+\begin{tabular}{>{\centering\arraybackslash}p{16em}}
+    \hline
+    辅助格式甚至支持插入 \textbackslash centering 等%
+    命令改变 p 列格式的对齐方式,一般还要加额外的命令 %
+    \textbackslash arraybackslash 以免出错。\\
+    \hline
+    \textbackslash centering 等对齐命令会破坏表格环境里 %
+    \textbackslash\textbackslash 换行命令的定义,%
+    \textbackslash arraybackslash 用来恢复之。%
+    如果不加 \textbackslash arraybackslash 命令,%
+    也可以用 \textbackslash tabularnewline 命令%
+    代替原来的 \textbackslash\textbackslash 实现表格换行。\\
+    \hline
+\end{tabular}
+
+\appendix
+\section{附录}
+\end{document}
