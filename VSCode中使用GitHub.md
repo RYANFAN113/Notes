@@ -55,6 +55,8 @@ git config --global user.email "myname@mymail.com"
 ssh-keygen -t rsa -C "myname@mymail.com"  
 # 命令执行完毕会生成一个名为id_rsa.pub的文件。利用文本编辑器打开该文件，全文复制  
 # 打开GitHub上的myrepo仓库，进入setting，设置deploy keys，将id_rsa.pub中的内容粘贴进去即可。默认会生成该key对应的title为myname@mymail.com
+# 多个库使用不同的秘钥时，加入一下命令
+ssh-add /rsa文件名称
 ```
 
 ## 绑定本地文件夹和GitHub仓库
