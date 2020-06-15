@@ -34,6 +34,8 @@
 
 [Markdown All in One 书写Markdown利器](https://segmentfault.com/a/1190000017461306?utm_source=tag-newest)
 
+[流程图参考](https://www.iminho.me/wiki/docs/mindoc/flowchart.md)
+
 ---
 
 # Markdown 基本语法
@@ -271,15 +273,13 @@ H~2~O
 示例：
 
 ```markdown  
-#```C++ {.line-numbers highlight=3-4}  
+C++ {.line-numbers highlight=3-4}  
 include<iostream>
 int main()
 {  
 std::cout<<"hello world!""<<std::endl;  
 return 0;  
 }  
-#```
-# 把井号删除
 ```
 
 效果：
@@ -407,3 +407,184 @@ Content in the first column | Content in the second column
 ##### 这是五级标题
 
 ###### 这是六级标题
+
+---
+
+## 流程图
+
+主要的语法为**name=>type:describe**,其中type主要有以下几种：
+
+1. 开始和结束：start、end
+2. 输入输出：inputoutput
+3. 操作：operation
+4. 条件：condition
+5. 子程序：subroutine
+
+\- 代表实线 ， 主动发送消息，比如 request请求
+\> 代表实心箭头 ， 同步消息，比如 AJAX 的同步请求
+-- 代表虚线，表示返回消息，spring Controller return
+\>\> 代表非实心箭头 ，异步消息，比如AJAX请求
+
+示例：
+
+```markdown
+flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+效果：
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+### 使用 mermaid
+
+```markdown
+mermaid
+graph 流程图的方向
+流程图的内容
+```
+
+流程图方向有下面几个值
+
+- TB 从上到下
+- BT 从下到上
+- RL 从右到左
+- LR 从左到右
+- TD 同TB
+
+基本图形
+
+- id + [文字描述]矩形
+- id + (文字描述)圆角矩形
+- id + >文字描述]不对称的矩形
+- id + {文字描述}菱形
+- id + ((文字描述))圆形
+
+节点之间的连接
+
+- A --> B A带箭头指向B
+- A --- B A不带箭头指向B
+- A -.- B A用虚线指向B
+- A -.-> B A用带箭头的虚线指向B
+- A ==> B A用加粗的箭头指向B
+- A -- 描述 --- B A不带箭头指向B并在中间加上文字描述
+- A -- 描述 --> B A带箭头指向B并在中间加上文字描述
+- A -. 描述 .-> B A用带箭头的虚线指向B并在中间加上文字描述
+- A == 描述 ==> B A用加粗的箭头指向B并在中间加上文字描述
+
+示例：
+
+```markdown
+mermaid
+graph LR
+    start[开始] --> input[输入A,B,C]
+    input --> conditionA{A是否大于B}
+    conditionA -- YES --> conditionC{A是否大于C}
+    conditionA -- NO --> conditionB{B是否大于C}
+    conditionC -- YES --> printA[输出A]
+    conditionC -- NO --> printC[输出C]
+    conditionB -- YES --> printB[输出B]
+    conditionB -- NO --> printC[输出C]
+    printA --> stop[结束]
+    printC --> stop
+    printB --> stop
+```
+
+效果：
+
+```mermaid
+graph LR
+    start[开始] --> input[输入A,B,C]
+    input --> conditionA{A是否大于B}
+    conditionA -- YES --> conditionC{A是否大于C}
+    conditionA -- NO --> conditionB{B是否大于C}
+    conditionC -- YES --> printA[输出A]
+    conditionC -- NO --> printC[输出C]
+    conditionB -- YES --> printB[输出B]
+    conditionB -- NO --> printC[输出C]
+    printA --> stop[结束]
+    printC --> stop
+    printB --> stop
+```
+
+子流程图
+
+```markdown
+subgraph title
+    graph definition
+end
+```
+
+示例：
+
+```markdown
+mermaid
+graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+```
+
+效果：
+
+```mermaid
+graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+```
+
+自定义样式
+
+```markdown
+style id 具体样式
+```
+
+示例：
+
+```markdown
+mermaid
+graph LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px,fill-opacity:0.5
+    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 10,5
+```
+
+效果：
+
+```mermaid
+graph LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px,fill-opacity:0.5
+    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 10,5
+```
