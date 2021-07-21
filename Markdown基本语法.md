@@ -1,26 +1,4 @@
-- [References](#references)
-- [Markdown 基本语法](#markdown-%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95)
-  - [字体](#%e5%ad%97%e4%bd%93)
-  - [引用](#%e5%bc%95%e7%94%a8)
-  - [缩写 MEP](#%e7%bc%a9%e5%86%99-mep)
-  - [注脚 MEP](#%e6%b3%a8%e8%84%9a-mep)
-  - [上下标 MEP](#%e4%b8%8a%e4%b8%8b%e6%a0%87-mep)
-  - [分割线](#%e5%88%86%e5%89%b2%e7%ba%bf)
-  - [图片](#%e5%9b%be%e7%89%87)
-  - [超链接](#%e8%b6%85%e9%93%be%e6%8e%a5)
-  - [代码块](#%e4%bb%a3%e7%a0%81%e5%9d%97)
-  - [任务列表](#%e4%bb%bb%e5%8a%a1%e5%88%97%e8%a1%a8)
-  - [表格](#%e8%a1%a8%e6%a0%bc)
-  - [列表](#%e5%88%97%e8%a1%a8)
-    - [无序列表](#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8)
-    - [有序列表](#%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8)
-  - [标题](#%e6%a0%87%e9%a2%98)
-- [这是一级标题](#%e8%bf%99%e6%98%af%e4%b8%80%e7%ba%a7%e6%a0%87%e9%a2%98)
-  - [这是二级标题](#%e8%bf%99%e6%98%af%e4%ba%8c%e7%ba%a7%e6%a0%87%e9%a2%98)
-    - [这是三级标题](#%e8%bf%99%e6%98%af%e4%b8%89%e7%ba%a7%e6%a0%87%e9%a2%98)
-      - [这是四级标题](#%e8%bf%99%e6%98%af%e5%9b%9b%e7%ba%a7%e6%a0%87%e9%a2%98)
-        - [这是五级标题](#%e8%bf%99%e6%98%af%e4%ba%94%e7%ba%a7%e6%a0%87%e9%a2%98)
-          - [这是六级标题](#%e8%bf%99%e6%98%af%e5%85%ad%e7%ba%a7%e6%a0%87%e9%a2%98)
+[TOC]
 
 ---
 
@@ -36,6 +14,10 @@
 
 [流程图参考](https://www.iminho.me/wiki/docs/mindoc/flowchart.md)
 
+[使用 Typora 画图(类图、流程图、时序图)](https://zhuanlan.zhihu.com/p/172635547)
+
+[Typora 使用小技巧](https://mp.weixin.qq.com/s?__biz=MzIyNDQzMDAwNg==&mid=2247486183&idx=1&sn=abbf162c8094a3d1dc52ea5be6eab352&chksm=e80e583edf79d128b3da9c4d68de6a23b2f7662efef8d65064483e79477f24bea52fbbcf945a&token=1113980067&lang=zh_CN#rd)
+
 ---
 
 # Markdown 基本语法
@@ -49,7 +31,7 @@
 *这是倾斜的文字*  
 ***这是斜体加粗的文字***  
 ~~这是加删除线的文字~~  
-==标记==  #MEP
+==标记==   #MPE
 
 <font face="黑体">我是黑体字\</font>  
 <font face="微软雅黑">我是微软雅黑\</font>  
@@ -98,11 +80,12 @@ n个...
 
 >这是引用的内容1
 >>这是引用的内容2
+>>
 >>>>>>>>>>这是引用的内容3
 
 ---
 
-## 缩写 MEP
+## 缩写 ^MPE^
 
 示例：
 
@@ -120,7 +103,7 @@ The HTML specification is maintained by the W3C.
 
 ---
 
-## 注脚 MEP
+## 注脚 ^MPE^
 
 示例：
 
@@ -136,7 +119,7 @@ Content [^1]
 
 ---
 
-## 上下标 MEP
+## 上下标 ^MPE^
 
 示例：
 
@@ -239,13 +222,13 @@ H~2~O
 注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。
 
 ```markdown
-<a href="超链接地址" target="_blank">超链接名</a>
+<a href="超链接地址" target="_blank">超链接名<a>
 ```
 
 示例:  
 
 ```markdown
-<a href="<https://www.jianshu.com/u/1f5ac0cf6a8b>" target="_blank">简书\</a>  
+<a href="<https://www.jianshu.com/u/1f5ac0cf6a8b>" target="_blank">简书<a>  
 ```
 
 效果：
@@ -262,7 +245,7 @@ H~2~O
 
 示例：
 
-```c++
+```markdown
 `print("hello");`
 ```
 
@@ -273,13 +256,14 @@ H~2~O
 示例：
 
 ```markdown  
-C++ {.line-numbers highlight=3-4}  
+​```C++ {.line-numbers highlight=3-4}  
 include<iostream>
 int main()
 {  
 std::cout<<"hello world!""<<std::endl;  
 return 0;  
 }  
+​```
 ```
 
 效果：
@@ -291,7 +275,7 @@ int main()
 std::cout<<"hello world!""<<std::endl;  
 return 0;  
 }  
-```  
+```
 
 ---
 
@@ -320,18 +304,18 @@ return 0;
 示例：
 
 ```markdown
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 ```
 
 效果：
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 ---
 
@@ -428,7 +412,7 @@ Content in the first column | Content in the second column
 示例：
 
 ```markdown
-flow
+​```flow
 st=>start: Start
 op=>operation: Your Operation
 cond=>condition: Yes or No?
@@ -437,6 +421,7 @@ e=>end
 st->op->cond
 cond(yes)->e
 cond(no)->op
+​```
 ```
 
 效果：
@@ -455,9 +440,10 @@ cond(no)->op
 ### 使用 mermaid
 
 ```markdown
-mermaid
+​```mermaid
 graph 流程图的方向
 流程图的内容
+​```
 ```
 
 流程图方向有下面几个值
@@ -491,7 +477,7 @@ graph 流程图的方向
 示例：
 
 ```markdown
-mermaid
+​```mermaid
 graph LR
     start[开始] --> input[输入A,B,C]
     input --> conditionA{A是否大于B}
@@ -504,6 +490,7 @@ graph LR
     printA --> stop[结束]
     printC --> stop
     printB --> stop
+​```
 ```
 
 效果：
@@ -534,7 +521,7 @@ end
 示例：
 
 ```markdown
-mermaid
+​```mermaid
 graph TB
     c1-->a2
     subgraph one
@@ -546,6 +533,7 @@ graph TB
     subgraph three
     c1-->c2
     end
+​```
 ```
 
 效果：
@@ -573,11 +561,12 @@ style id 具体样式
 示例：
 
 ```markdown
-mermaid
+​```mermaid
 graph LR
     id1(Start)-->id2(Stop)
     style id1 fill:#f9f,stroke:#333,stroke-width:4px,fill-opacity:0.5
     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 10,5
+​```
 ```
 
 效果：
@@ -588,3 +577,4 @@ graph LR
     style id1 fill:#f9f,stroke:#333,stroke-width:4px,fill-opacity:0.5
     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 10,5
 ```
+

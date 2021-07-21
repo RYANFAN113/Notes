@@ -71,8 +71,8 @@ ssh -T git@github.com
 ## 先进行一次拉取，再进行一次推送
 
 ```shell
-git pull mycode master  
-git push --force mycode master
+git pull mycode main 
+git push --force mycode main
 ```
 
 ---
