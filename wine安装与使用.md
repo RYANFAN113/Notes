@@ -139,7 +139,11 @@ statusfontsize=13
 IconTitleSize=13
 ```
 
-5.最关键的一步，网上很多文章中没有提到的一步──把下面的代码保存为zh.reg，然后终端执行regedit zh.reg。从Windows目录下的Fonts里的simsun.ttc复制到/home/user/.wine/drive_c/windows/fonts里面。
+5.最关键的一步，网上很多文章中没有提到的一步──把下面的代码保存为zh.reg，然后终端执行
+```bash
+sudo wine regedit zh.reg
+```
+从Windows目录下的Fonts里的simsun.ttc复制到/home/user/.wine/drive_c/windows/fonts里面。
 代码:
 
 ```bash
